@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+.container-site {
+  width: 100%;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 25, 40, 0.94) 0%,
+      rgba(5, 25, 40, 0.78) 35%,
+      rgba(5, 25, 40, 0.78) 100%
+    ),
+    url("aset/hero-villa.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 1100px;
+  margin: auto;
+  height: 100vh;
+  line-height: 1.1;
+}
+.hero-title {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: #efbd87;
+}
+
+.hero-description {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/*New Code*/
+.featured-property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1140px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Bagian Kiri: Gambar & Badge */
+.img-featured-property {
+  position: relative;
+  flex: 1;
+  max-width: 1140px;
+}
+
+.img-featured-property img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.badge-featured {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badge-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #163a5f;
+}
+
+.badge-text {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Bagian Kanan: Konten Teks */
+.content-featured-property {
+  flex: 1;
+}
+
+.title-featured-property {
+  font-size: 36px;
+  font-weight: 700;
+  color: #163a5f;
+  line-height: 1.25;
+  margin: 0 0 20px 0;
+}
+
+.desc-featured-property {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0 0 16px 0;
+}
+
+/* Daftar list unggulan */
+.list-featured-property {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 32px 0;
+}
+
+.list-featured-property li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.check-icon {
+  color: #a16247;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* Tombol Lihat Properti */
+.btn-featured-property {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #163a5f;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  box-shadow: 0 6px 16px rgba(22, 58, 95, 0.25);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-featured-property:hover {
+  background-color: #0f2944;
+  transform: translateY(-2px);
+}
+
+/* Responsif Tablet & HP */
+@media (max-width: 900px) {
+  .featured-property {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .img-featured-property,
+  .content-featured-property {
+    width: 100%;
+  }
+
+  .img-featured-property img {
+    height: 340px;
+  }
+
+  .title-featured-property {
+    font-size: 28px;
+  }
+}
+
+/*New Code */
+:root {
+  --primary: #194668;
+  --text-deskripsi: #647b8c;
+  --orange: #c5804b;
+}
+
+/* ================= SECTION KONTAK ================= */
+
+.contact-section {
+  background-color: #f8fafc;
+  padding: 80px 20px;
+  border-top: 1px solid #eef2f6;
+  font-family:
+    "Inter",
+    sans-serif;
+}
+
+.contact-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 48px auto;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 12px 0;
+}
+
+.contact-subtitle {
+  font-size: 14.5px;
+  color: var(--text-deskripsi);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid Kartu */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(25, 70, 104, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(25, 70, 104, 0.09);
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #eef3f7;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 8px 0;
+}
+
+.card-desc {
+  font-size: 13.5px;
+  color: var(--text-deskripsi);
+  line-height: 1.65;
+  margin: 0 0 16px 0;
+}
+
+.card-info {
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.card-info:hover {
+  color: var(--orange);
+}
+
+/* ================= FOOTER ================= */
+
+.main-footer {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 64px 20px 32px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+  gap: 40px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Kolom Brand */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.brand-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 260px;
+  margin: 0;
+}
+
+/* Heading Kolom Footer */
+.footer-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 18px 0;
+  color: #ffffff;
+}
+
+/* Link Tautan, Kontak & Sosmed */
+.footer-links,
+.footer-contact-list,
+.footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact-list li,
+.footer-social-list li {
+  margin-bottom: 12px;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links a,
+.footer-social-list a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-social-list a:hover {
+  color: var(--orange);
+}
+
+.footer-contact-list li,
+.footer-social-list a {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-contact-list svg,
+.footer-social-list svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Copyright Yang Dibawah */
+.footer-bottom {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= RESPONSIF ================= */
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
